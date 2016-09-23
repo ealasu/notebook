@@ -1,5 +1,6 @@
+use std::path::Path;
 
-struct Notebook {
+pub struct Notebook {
 }
 
 impl Notebook {
@@ -27,3 +28,7 @@ impl Notebook {
     /// git blame
     fn history(&self, path: &Path) -> History {}
 }
+
+pub struct SyncStatus {}
+
+pub struct History {}
